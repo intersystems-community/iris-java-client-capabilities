@@ -39,9 +39,22 @@ mvn install:install-file -Dfile=c:\InterSystems\IRIS\dev\java\lib\JDK18\intersys
 
 Review `App.java` to make sure that the connection details and namespace are correct to connect to your IRIS instance.  Note:  The namespace probably doesn't exist on your instance, so either change it to one that you have or create it.
 
+### Install the SummitAssigner.cls
+
+Import `SummitAssigner.cls` into your IRIS instance.
+
 ### Run the demo
 
 Now you should be able to build and run the demo"
 ```
 mvn compile exec:java -Dexec.mainClass="summit._Main"
 ```
+
+## Further reading
+
+To learn more about developing with Java in InterSystems IRIS, please see our online training materials:
+
+* https://www.intersystems.com/resources/detail/intersystems-and-java-quickstart/
+* https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_XEP
+* https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_DBNATIVE
+* https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_JDBC
